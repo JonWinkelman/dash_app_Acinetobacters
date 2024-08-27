@@ -1,5 +1,10 @@
 # Dash_app_Acinetobacters  
-### Run set_up_dash_app.ipynb to:  
+## Prerequisites  
+* ncbi datasets cli https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/  
+* OrthoFinder 2.5.4 https://github.com/davidemms/OrthoFinder   
+* python packages: `pandas` `numpy` `plotly` `Bio.AlignIO` `dash`
+* 
+## Run set_up_dash_app.ipynb to:  
 1. Download genomes and their summaries from NCBI datasets database   
 2. Run orthofinder on proteomes  
 3. Build local python interactive dash app from orthofinder results
