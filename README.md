@@ -8,9 +8,11 @@
 
 #### Find HOGs of interest and select them at different phylogenetic levels
 ##### Select N0 node in tree to show info on selected HOG at NO level.
-- Here we have selected HOG N0.HOG0000651, which contains all genes that descended from the species
-  represented by the N0 node on this tree, the last common ancestor of all organisms in this analysis.
-  These genes include AstAs and AstOs in acinetobacter.
+- Here we have selected HOG N0.HOG0000651, which contains all genes that descended from
+  the an ancestral gene of astA and AstO (we'll call it AncAstA/O) of this ancestral species
+   represented by represented by the N0 node on this tree, the last common ancestor of all organisms in this analysis.
+- In the lowere pane of the app, you can see a gene tree of all proteins in the selected HOG. Here AstA and AstO in
+  Acinetobacter cluster away from non-Acinetobacter AstA genes.
 ![Logo](assets/N0.png)
   
 ##### Select N2 node in tree, LCA of all acinetobacters 
@@ -19,5 +21,6 @@
 ![Logo](assets/N2.png)
 
 ##### Select N42 node in tree, a common ancestor of acb (I) and colisiniresistens (II) clades.
+- At N42, the N2 HOG has split into two HOGs, suggesting the 
 ![Logo](assets/N42.png)
 
