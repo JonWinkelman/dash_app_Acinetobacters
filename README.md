@@ -5,9 +5,11 @@
 3. Build local python interactive dash app from orthofinder results
 
 ### Once you have run the notebook:   
-go to terminal and move to the directory containing the notebook and app1.py  
+go to your terminal,  and cd to the directory containing set_up_dash_app.ipynb and app1.py  
 run:  
 `python3 app1.py`  
+this will start a local server that you can access via http://127.0.0.1:8050/ 
+to view the application in a web browser.
 
 #### Find HOGs of interest and select them at different phylogenetic levels
 ##### Select N0 node in tree to show info on selected HOG at NO level.
