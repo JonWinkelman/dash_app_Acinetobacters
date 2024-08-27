@@ -20,8 +20,8 @@ to view the application in a web browser.
 * This file includes a wider distribution of gamma proteobacteria, rooted by one beta-proteobacteria.
 * You can alse run this analysis on the 'accessions_deduped_ab.txt', which includes mostly A. baumannii genomes/proteomes rooted by other acinetobacter spp.  
 
-## Find HOGs of interest and select them at different phylogenetic levels
-### Select N0 node in tree to show info on selected HOG at NO level.
+### Find HOGs of interest and select them at different phylogenetic levels
+#### Select N0 node in tree to show info on selected HOG at NO level.
 * Here we have selected HOG N0.HOG0000651, which contains all genes that descended from
   the an ancestral gene of astA and AstO (we'll call it AncAstA/O) of this ancestral species
    represented by represented by the N0 node on this tree, the last common ancestor of all organisms in this analysis.
@@ -30,13 +30,13 @@ to view the application in a web browser.
   
 ![Logo](assets/N0.png)
   
-### Select N2 node in tree, LCA of all acinetobacters 
+#### Select N2 node in tree, LCA of all acinetobacters 
 * This HOG contians all AstA/O genes that descended from the LCA of acinetobacters.
 * This analysis suggests that the LCA of Acinetobacters still only contained one AstA/O gene.
   
 ![Logo](assets/N2.png)
 
-### Select N42 node in tree, a common ancestor of acb (I) and colisiniresistens (II) clades.
+#### Select N42 node in tree, a common ancestor of acb (I) and colisiniresistens (II) clades.
 * At N42, the N2 HOG has split into two N42 HOGs, one containing the AstA genes, and the other containing the
   AstO genes from the partial Ast2 operon
   
