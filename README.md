@@ -16,7 +16,9 @@ run:
 * this will start a local server that you can access via http://127.0.0.1:8050/ 
 to view the application in a web browser.
 
-## Below are screenshots of analysis run on accessions in the 'accessions.txt' file that include wider distribution of gamma proteobacteria, rooted by one beta-proteobacteria. You can alse run this analysis on the 'accessions_deduped_ab.txt', which includes mostly A. baumannii genomes/proteomes rooted by other acinetobacter spp.  
+## Below are screenshots of  analysis run on accessions in the 'accessions.txt' file  
+* This file includes a wider distribution of gamma proteobacteria, rooted by one beta-proteobacteria.
+* You can alse run this analysis on the 'accessions_deduped_ab.txt', which includes mostly A. baumannii genomes/proteomes rooted by other acinetobacter spp.  
 
 ## Find HOGs of interest and select them at different phylogenetic levels
 ### Select N0 node in tree to show info on selected HOG at NO level.
