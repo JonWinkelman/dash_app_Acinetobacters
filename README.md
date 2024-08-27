@@ -21,6 +21,7 @@
 ![Logo](assets/N2.png)
 
 ##### Select N42 node in tree, a common ancestor of acb (I) and colisiniresistens (II) clades.
-- At N42, the N2 HOG has split into two HOGs, suggesting the 
+- At N42, the N2 HOG has split into two N42 HOGs, one containing the AstA genes, and the other containing the
+  AstO genes from the partial Ast2 operon
 ![Logo](assets/N42.png)
 
