@@ -18,6 +18,6 @@
 - This analysis suggests that the LCA of Acinetobacters still only contained one AstA/O gene.
 ![Logo](assets/N2.png)
 
-##### Select N33 node in tree, a common ancestor of acb (I) and colisiniresistens (II) clades.
-![Logo](assets/N33.png)
+##### Select N42 node in tree, a common ancestor of acb (I) and colisiniresistens (II) clades.
+![Logo](assets/N42.png)
 
