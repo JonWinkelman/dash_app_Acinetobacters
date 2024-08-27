@@ -11,6 +11,7 @@
 - Here we have selected HOG N0.HOG0000651, which contains all genes that descended from the species
   represented by the N0 node on this tree, the last common ancestor of all organisms in this analysis.
   These genes include AstAs and AstOs in acinetobacter.
+![Logo](assets/N0.png)
   
 ##### Select N2 node in tree, LCA of all acinetobacters 
 - This HOG contians all AstA/O genes that descended from the LCA of acinetobacters.
