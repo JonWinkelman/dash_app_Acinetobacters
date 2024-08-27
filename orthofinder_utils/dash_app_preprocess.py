@@ -90,8 +90,8 @@ def initial_check(path_to_results):
     """
     check that assemblies in orthogroups.tsv, proteome folder, and ncbi/data folder are equivalent
     """
-#     orth_assemblies = list(pd.read_csv(os.path.join(path_to_results, 
-#                         'orthogroups/orthogroups.tsv'), sep = '\t').columns[1:]) 
+    orth_assemblies = list(pd.read_csv(os.path.join(path_to_results, 
+                        'orthogroups/orthogroups.tsv'), sep = '\t').columns[1:]) 
     proteome_assemblies = accessions_from_proteome_dir('./data/Proteomes')
     
     ncbidata_assemblies = [folder for folder in os.listdir('./data/ncbi_dataset/data')
@@ -113,11 +113,12 @@ def initial_check(path_to_results):
         
         
 def make_dict_fromNCBI_summaries(path_to_json):
+    """"""
     with open(path_to_json, 'r') as f:
-        wierd_nested_d = json.load(f)['assemblies']
+        wierd_nested_d = json.load(f)['reports']
     summaries_d = {}
     for ass in wierd_nested_d:
-        summaries_d[ass['assembly']['assembly_accession']] = ass['assembly']
+        summaries_d[ass['accession']] = ass
     return summaries_d
         
 
@@ -126,16 +127,14 @@ def write_AssemblyAccession_to_SpeciesName_from_summaries(path_to_results, outpu
     summary_dict = make_dict_fromNCBI_summaries(path_to_json)
     acc2name = {}
     for acc, summ, in summary_dict.items():
-        if len(summ['org']['sci_name'].split(' '))>2:
-            acc2name[acc] = summ['org']['sci_name']
-        elif summ['org'].get('strain'):
-            acc2name[acc] = summ['org']['sci_name'] +' '+ summ['org'].get('strain')
-        elif summ['org'].get('isolate'):
-            acc2name[acc] = summ['org']['sci_name'] +' '+ summ['org'].get('isolate')
+        if len(summ['organism']['organism_name'].split(' '))>2:
+            acc2name[acc] = summ['organism']['organism_name']
+        elif summ['organism'].get('infraspecific_names').get('strain'):
+            acc2name[acc] = summ['organism']['organism_name'] +' '+ summ['organism'].get('infraspecific_names').get('strain')
         else:
-            acc2name[acc] = summ['org']['sci_name']
+            acc2name[acc] = summ['organism']['organism_name']
     with open('./data/summary_data/AssemblyAccession_to_SpeciesName.json', 'w') as f:
-        json.dump(acc2name, f)  
+        json.dump(acc2name, f)    
         
         
 def write_AssemblyAccession_to_SpeciesName(path_to_results, output_file_path=None):
