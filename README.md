@@ -1,10 +1,8 @@
-# Dash_app_Acinetobacters
-
-### Download genomes and their summaries from NCBI datasets database  
-
-### Run orthofinder on proteomes  
-
-### Build local python interactive dash app from orthofinder results  
+# Dash_app_Acinetobacters  
+### Run set_up_dash_app.ipynb to:  
+1. Download genomes and their summaries from NCBI datasets database   
+2. Run orthofinder on proteomes  
+3. Build local python interactive dash app from orthofinder results   
 
 #### Find HOGs of interest and select them at different phylogenetic levels
 ##### Select N0 node in tree to show info on selected HOG at NO level.
